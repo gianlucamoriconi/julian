@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Abhaya Libre', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Lilita One', cursive;
+}
+
+
+/*Logo de la pagina*/
+
+.navbar-logo-img {
+    width: 100%;
+    height: auto;
+    max-width: 70px;
+}
+
+@media (max-width:767px) {
+    .navbar-logo-img {
+        max-width: 50px;
+    }
+}
+
+.himalaya {
+    /* width: 600px; */
+    border: solid blue;
+}
+
+footer {
+    height: 10%;
+    /* background-color: rgb(5, 5, 5); */
+    display: flex;
+    flex-direction: column;
+}
+
+.whatsapp {
+    width: 25px;
+    height: 25px;
+}
+
+/*Logo de whatsapp*/
+
+.Gustos {
+    text-align: center;
+}
+
+/*Encabezado de los gustos de helados*/
+.Tortas {
+    text-align: center;
+}
+
+/*Encabezado de las tortas*/
+.productosmain {
+    background-color: brown;
+
+}
+
+.padding-for-fixed-navbar{
+    padding-top: 86px;
+}
+
+/*Input myfile del formulario de rrhh*/
+.parrim {
+    display: flex;
+}
+
+#carouselExample {
+    height: 5%;
+}
+
+.paleta {
+    height: 30%;
+}
+
+.tortahelada {
+    height: 30%;
+}
+
+.consultas {
+    display: flex;
+    justify-content: start;
+}
+
+.numero {
+    display: flex;
+}
+
+.mrrhh {
+    background-color: blue;
+}
+
+.cv {
+    border: solid;
+    display: grid
+}
+
+input {
+    width: 30%;
+}
+
+.forim {
+    display: flex;
+}
+
+.lista-gustos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nuestrosproductos {
+    text-align: center;
+}
+
+.contenedor-carrusel {
+    width: 50%;
+    height: 50%;
+}
+
+.historia-imagen {
+    display: flex;
+}
+
+.max-height-vh-100 {
+    height: 100vh;
+}
+
+.max-height-vh-80 {
+    height: 80vh;
+}
+
+.max-height-vh-70 {
+    height: 70vh;
+}
+
+.max-height-vh-60 {
+    height: 60vh;
+}
+
+.max-height-vh-50 {
+    height: 50vh;
+}
+
+.max-height-vh-40 {
+    height: 40vh;
+}
+
+.max-height-vh-30 {
+    height: 30vh;
+}
+
+span.carousel-control-prev-icon,
+span.carousel-control-next-icon {
+    border-radius: 4px;
+    background-color: rgb(0 0 0 / 18%);
+    background-size: 57%;
+}
+
+.copyright{
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+/* Custom sizes */
+.max-width-900{
+    max-width: 900px;
+}
+
+/* Custom bootstrap */
+.card img{
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-title{
+    font-size: 18px;
+}
+
+#scroll-cards .card{
+    border: 0;
+    border-radius: 0;
+}
+
+#scroll-cards .card-img, #scroll-cards .card-img-top{
+    border: 0;
+    border-radius: 0;
+}
+
+/* Section Category */
+#categories{
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.category{
+    position: relative;
+    height: 250px;
+    max-width: 550px;
+}
+
+.category-title{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    color: #ffffff;
+    font-size: 22px;
+    background: rgba(0, 0, 0, 0.4);
+    transition: 0.2s;
+}
+
+.category-title:hover{
+    background: rgba(0, 0, 0, 0);
+    transition: 0.2s;
+}
+
+.category img{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}

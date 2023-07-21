@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Kablammo&display=swap"
+    rel="stylesheet">
+  <!--Para ingresar esta fuente poner font-family: 'Dancing Script', cursive;
+    font-family: 'Kablammo', cursive;-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <title>Productos</title>
+</head>
+
+<body>
+  <header class="position-fixed w-100 z-3">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="rounded-circle logo overflow-hidden">
+          <a class="navbar-logo-link" href="../index.html">
+            <img class="navbar-logo-img" src="../Images/logo.png" alt="Logo">
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link sucursales" aria-current="page" href="./Sucursales.html">Sucursales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./rrhh.html">RRHH</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link productos" href="./productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link Historia" href="./Historia.html">Historia</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="padding-for-fixed-navbar">
+    <!-- Categories -->
+    <section id="categories" class="d-flex mb-5 justify-content-evenly">
+      <div class="category col-6 me-md-2 overflow-hidden">
+        <a class="category-link" href="#helados">
+          <div class="category-title">Helados</div>
+          <img class="w-100" src="../Images/ice-cream-cat.jpg" alt="">
+        </a>
+      </div>
+      <div class="category col-6 ms-md-2 overflow-hidden">
+        <a class="category-link" href="#tortas-heladas">
+          <div class="category-title">Tortas heladas</div>
+          <img class="w-100" src="../Images/torta-helada.jpg" alt="">
+        </a>
+      </div>
+    </section>
+    <!-- Productos -->
+    <section id="product-list" class="mb-5">
+      <div id="helados" class="pt-5 pb-5">
+        <div class="d-flex justify-content-center gap-5 m-auto">
+          <div class="title-container">
+            <h2 class="mb-4 text-center">Helados</h2>
+          </div>
+          <div class="modal-container">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Ver gustos
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <ul>
+                      <li>Chocolate amargo</li>
+                      <li>Chocolate marroc</li>
+                      <li>Chocolate blanco</li>
+                      <li>Chocolate kinder</li>
+                      <li>Chocolate con almendras</li>
+                      <li>Dulce de leche super </li>
+                      <li>Dulce de leche con almendras</li>
+                      <li>Dulce de leche granizado</li>
+                      <li>Dulce de leche con bombones</li>
+                      <li>Tramontana</li>
+                      <li>Americana</li>
+                      <li>Crema del cielo</li>
+                      <li>Menta granizada</li>
+                      <li>Frutilla</li>
+                      <li>Banana Split</li>
+                      <li>Limon</li>
+                      <li>Durazno</li>
+                      <li>Amarena</li>
+                      <li>Anana</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="scroll-cards" class="d-flex overflow-scroll ps-3 pe-3 shadow-sm">
+          <!-- Item -->
+          <div class="card col col-4" style="width: 18rem;">
+            <img src="../Images/ice-cream-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Vasito</h3>
+              <p class="card-text">De oblea o descartable.</p>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="card col col-4" style="width: 18rem;">
+            <img src="../Images/ice-cream-3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Cucurucho</h3>
+              <p class="card-text">Simple o bañado en chocolate.</p>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="card col col-4" style="width: 18rem;">
+            <img src="../Images/dessert-ice-cream.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">1/4 de kg</h3>
+              <p class="card-text">Hasta 3 sabores.</p>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="card col col-4" style="width: 18rem;">
+            <img src="../Images/ice-cream-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">1/2 kg</h3>
+              <p class="card-text">Hasta 3 sabores.</p>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="card col col-4" style="width: 18rem;">
+            <img src="../Images/ice-cream-3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">1 kg</h3>
+              <p class="card-text">Hasta 4 sabores.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tortas-heladas" class="pt-5 pb-5">
+        <h2 class="mb-4 text-center w-100">Tortas heladas</h2>
+        <div class="d-flex flex-wrap justify-content-center gap-4">
+          <!-- Item -->
+          <div class="card col col-4" style="width: 18rem;">
+            <img src="../Images/lemon-pie.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Lemon pie</h3>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="card col col-4" style="width: 18rem;">
+            <img src="../Images/cheesecake.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Cheescake con arandanos</h3>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="card col col-4" style="width: 18rem;">
+            <img src="../Images/selvanegra.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Selva negra</h3>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="card col col-4" style="width: 18rem;">
+            <img src="../Images/chocotorta.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Chocotorta</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="p-3 border-top">
+    <div class="d-flex flex-wrap">
+      <div class="col-12 col-md-6">
+        <div class="d-inline">
+          <img src="../Images/whatsapp.jpg" alt="whatsapp" class="whatsapp">
+          <a href="https://api.whatsapp.com/send/?phone=5491136248456&text&type=phone_number&app_absent=0"
+            class="d-inline">
+            +54 1135847425
+          </a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <p class="copyright m-0 text-end">Copyright Himalaya Heladería - 2023. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

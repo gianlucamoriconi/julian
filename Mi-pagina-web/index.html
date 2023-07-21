@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Kablammo&display=swap"
+    rel="stylesheet">
+  <!--Para ingresar esta fuente poner font-family: 'Dancing Script', cursive;
+    font-family: 'Kablammo', cursive;-->
+  <title>Himalaya</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+  <header class="position-fixed w-100 z-3">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="rounded-circle logo overflow-hidden">
+          <a class="navbar-logo-link" href="./index.html">
+            <img class="navbar-logo-img" src="./Images/logo.png" alt="Logo">
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link sucursales" aria-current="page" href="./Pages/Sucursales.html">Sucursales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Pages/rrhh.html">RRHH</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link productos" href="./Pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link Historia" href="./Pages/Historia.html">Historia</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container padding-for-fixed-navbar">
+
+    <!-- Sección presentación -->
+    <section id="presentation" class="pt-5 mb-5">
+      <h1 class="text-center mb-4">Los mejores del sur hace 50 años.</h1>
+      <div class="d-flex flex-wrap w-100">
+        <div class="col">
+          <p class="fs-5">Abierta hace 50 años, Himalaya se destaca por su alta calidad y variedad de sabores, con una
+            relacion precio calidad que la hace la mejor heladeria del sur de la provincia de Buenos Aires.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carrusel Bootstrap -->
+    <section id="carousel-home" class="mb-5">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner rounded-5">
+          <div class="carousel-item active">
+            <img src="./Images/ice-cream-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Images/ice-cream-2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Images/dessert-ice-cream.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Promociones -->
+    <section id="promotions" class="mb-5">
+      <h2 class="mb-4">Promociones</h2>
+      <div class="d-flex flex-wrap justify-content-center gap-4">
+        <!-- Item promo -->
+        <div class="card col col-4" style="width: 18rem;">
+          <img src="./Images/ice-cream-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">2x1 en vasos</h3>
+            <p class="card-text">Para compartir con amigos y familia.</p>
+          </div>
+        </div>
+        <!-- Item promo -->
+        <div class="card col col-4" style="width: 18rem;">
+          <img src="./Images/ice-cream-3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">2x1 en conos</h3>
+            <p class="card-text">Para compartir con amigos y familia.</p>
+          </div>
+        </div>
+        <!-- Item promo -->
+        <div class="card col col-4" style="width: 18rem;">
+          <img src="./Images/dessert-ice-cream.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">Postres al 25%</h3>
+            <p class="card-text">Postres artesanales únicos de la casa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="mt-5 mb-5">
+    <section id="contact" class="mb-5 max-width-900 m-auto">
+      <h2 class="contactanos mb-4">Contactanos</h2>
+      <form action="Consultas.php" class="Consultas">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email
+          </label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+          <textarea class="form-control" placeholder="Escribí tu consulta acá..." ="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div>
+          <input class="btn btn-primary" type="submit" value="Enviar">
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="p-3 border-top">
+    <div class="d-flex flex-wrap">
+      <div class="col-12 col-md-6">
+        <div class="d-inline">
+          <img src="./Images/whatsapp.jpg" alt="whatsapp" class="whatsapp">
+          <a href="https://api.whatsapp.com/send/?phone=5491136248456&text&type=phone_number&app_absent=0"
+            class="d-inline">
+            +54 1135847425
+          </a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <p class="copyright m-0 text-end">Copyright Himalaya Heladería - 2023. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+</html>

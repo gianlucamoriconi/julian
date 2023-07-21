@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Kablammo&display=swap" rel="stylesheet">
+    <!--Para ingresar esta fuente poner font-family: 'Dancing Script', cursive;
+    font-family: 'Kablammo', cursive;-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Historia</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../Images/logo.png" alt="Logo" class="Logo"> <!--Logo de la heladeria-->
+          </a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+           </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link sucursales" aria-current="page" href="./Sucursales.html">Sucursales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./rrhh.html">RRHH</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link productos" href="./productos.html">
+                  Productos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link Historia" href="./Historia.html">Historia</a>
+              </li>
+            </ul> 
+          </div>
+        </div>
+      </nav>
+     </header>
+     <main>
+      <h1> Nuestra historia</h1>
+      <div class="historia-imagen">
+      <p class="historia">
+        La familia Barrios es oriunda de Avellaneda, ciudad ubicada en la provincia de Buenos Aires, al sur de la capital. Sus antepasados eran habitantes de una ciudad muy cercana al Himalaya.
+        En el 1972 el bisabuelo Walter comienza vendiendo helado en forma ambulante en Wilde, Avellaneda. En 1973 el , con la abuela Teresa y sus cuatro hijos, Franco, Ana, Federico y Jorge,  abren la primera heladería Himalaya en la localidad de Wilde.
+        Cada hermano fue abriendo sus sucursales, incorporándose luego las nuevas generaciones.
+        Hoy haciendo honor a aquellas recetas de mas de 40 años, con materia prima seleccionada, la capacitación de nuestros maestros heladeros, incorporando tecnología, nuevos servicios y mejor atención; ofrecemos un producto único.
+      </p>
+      <img src="../Images/himalaya.jpg" alt="Himalaya" class="himalaya">
+      </div>
+     </main>
+     <footer>
+      <h4 class="contactanos">Contactanos</h4>
+      <form action="Consultas.php" class="Consultas">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email
+          </label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <input type="submit" value="Enviar">
+        </div>
+      </form>
+      <div class="numero">
+      <img src="../Images/whatsapp.jpg" alt="whatsapp" class="whatsapp">
+      <p>
+        +54 1135847425
+      </p>
+      </div>
+     </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
